@@ -3,6 +3,7 @@ const db = require("../models");
 // Defining methods for the savedController
 module.exports = {
   findAll: function (req, res) {
+    console.log("findAll------")
     db.Save
       .find(req.query)
       .sort({ date: -1 })
