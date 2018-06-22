@@ -3,19 +3,19 @@ import axios from "axios";
 export default {
   // Gets all saves
   getSaves: function () {
-    return axios.get("/api/saved");
+    return axios.get("/api/saves");
   },
   // Gets the save with the given id
   getSave: function (id) {
-    return axios.get("/api/saved/" + id);
+    return axios.get("/api/saves/" + id);
   },
   // Deletes the save with the given id
   deleteSave: function (id) {
-    return axios.delete("/api/saved/" + id);
+    return axios.delete("/api/saves/" + id);
   },
   // Saves a save to the database
   saveSave: function (saveData) {
-    return axios.post("/api/saved", saveData);
+    return axios.post("/api/saves", saveData);
   }
 };
 
