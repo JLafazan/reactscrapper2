@@ -105,7 +105,7 @@ class Saves extends Component {
               <List>
                 {this.state.saves.map(save => (
                   <ListItem key={save._id}>
-                    <Link to={"/saved/" + save._id}>
+                    <Link to={"/saves/" + save._id}>
                       <strong>
                         {save.title} by {save.story}
                       </strong>
