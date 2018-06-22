@@ -1,7 +1,7 @@
 const router = require("express").Router();
 const savedController = require("../../controllers/savedController.js");
 
-// Matches with "/api/saved"
+// Matches with "/api/saved/"
 router.route("/")
   .get(savedController.findAll)
   .post(savedController.create);
